@@ -18,6 +18,6 @@ source <(curl -s https://raw.githubusercontent.com/wpi-pw/template-workflow/mast
 if [ "$wpi_init_shell" == "true" ]; then
   for script in "${wpi_shell_before_install[@]}"
   do
-    bash wpi-shell.sh $script
+    bash <(curl -s https://raw.githubusercontent.com/wpi-pw/template-workflow/master/wpi-shell.sh) $script
   done
 fi
