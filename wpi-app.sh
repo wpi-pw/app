@@ -13,3 +13,11 @@ done
 
 # Get wpi-source for yml parsing, noroot, errors etc
 source <(curl -s https://raw.githubusercontent.com/wpi-pw/template-workflow/master/wpi-source.sh)
+
+# Run shell runner before app install
+if [ "$wpi_init_shell" == "true" ]; then
+  for script in "${wpi_shell_before_install[@]}"
+  do
+    bash wpi-shell.sh $script
+  done
+fi
