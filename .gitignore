@@ -3,7 +3,6 @@
 
 # project
 .env
-custom-config.yml
 /vendor/
 
 # workflow
@@ -13,5 +12,3 @@ web
 /composer.json
 /composer.lock
 /wp-cli.yml
-/post-install.sh
-/post-update.sh

@@ -1,0 +1,46 @@
+---
+
+# This file is a YAML formatted file. YAML indenting is done in spaces not
+# tabs, and whitespace is significant. If you don't stick to this, it will
+# fail on provision
+
+# These are your website, and their names plugins/themes they're
+# located in. See the docs for how to define these, and what all the keys
+# and options are
+# Remember, whitespace is significant! Tabs and spaces mean different things
+
+local:
+  app_host: wpi.test
+  app_dir: /
+  app_content: /
+  db_name: app_db_name
+  db_user: app_db_user
+  db_pass: app_db_pass
+  db_prefix: wp_wpi_
+
+dev:
+  app_host: wpi.dev
+  app_dir: /
+  app_content: /
+  db_name: app_db_name
+  db_user: app_db_user
+  db_pass: app_db_pass
+  db_prefix: wp_wpi_
+
+staging:
+  app_host: wpi.staging
+  app_dir: /
+  app_content: /
+  db_name: app_db_name
+  db_user: app_db_user
+  db_pass: app_db_pass
+  db_prefix: wp_wpi_
+
+production:
+  app_host: wpi.production
+  app_dir: /
+  app_content: /
+  db_name: app_db_name
+  db_user: app_db_user
+  db_pass: app_db_pass
+  db_prefix: wp_wpi_

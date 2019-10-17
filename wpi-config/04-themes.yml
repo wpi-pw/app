@@ -1,0 +1,24 @@
+---
+
+# This file is a YAML formatted file. YAML indenting is done in spaces not
+# tabs, and whitespace is significant. If you don't stick to this, it will
+# fail on provision
+
+# These are your website, and their names plugins/themes they're
+# located in. See the docs for how to define these, and what all the keys
+# and options are
+# Remember, whitespace is significant! Tabs and spaces mean different things
+
+theme:
+  name: hello-elementor
+  rename: ""
+  package: wp-cli
+  ver: *
+  zip: false
+
+child_theme:
+  generate_scaffold: true
+  name: child-theme
+  package: wp-cli
+  ver: *
+  zip: false

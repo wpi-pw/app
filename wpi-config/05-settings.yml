@@ -1,0 +1,49 @@
+---
+
+# This file is a YAML formatted file. YAML indenting is done in spaces not
+# tabs, and whitespace is significant. If you don't stick to this, it will
+# fail on provision
+
+# These are your website, and their names plugins/themes they're
+# located in. See the docs for how to define these, and what all the keys
+# and options are
+# Remember, whitespace is significant! Tabs and spaces mean different things
+
+# User
+admin_email: wpi@wpi.pw
+admin_password: password
+admin_user: wpi
+first_name: wpi.pw
+last_name: wpi.pw
+# Discussion
+comment_moderation: 1
+comment_registration: 1
+default_comment_status: 0
+default_pingback_flag: 0
+default_ping_status: 0
+# General
+blogdescription: WPI project
+date_format: d/m/Y
+time_format: H:i
+timezone_string: Europe/London
+start_of_week: 0
+site_switch_language: en_US
+# Media
+large_size_h: 0
+large_size_w: 0
+medium_size_h: 0
+medium_size_w: 0
+thumbnail_crop: 0
+thumbnail_size_h: 375
+thumbnail_size_w: 375
+# Miscellaneous
+convert_smilies: false
+uploads_use_yearmonth_folders: 0
+# Permalinks
+permalink_structure: /%postname%/
+# Privacy
+blog_public: 0
+# Reading
+frontpage_name: Homepage
+page_on_front: 4
+show_on_front: page
