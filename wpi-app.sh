@@ -21,3 +21,11 @@ if [ "$wpi_init_shell" == "true" ]; then
     bash <(curl -s https://raw.githubusercontent.com/wpi-pw/template-workflow/master/wpi-shell.sh) $script
   done
 fi
+
+# Run shell runner after app install
+if [ "$wpi_init_shell" == "true" ]; then
+  for script in "${wpi_shell_after_install[@]}"
+  do
+    bash <(curl -s https://raw.githubusercontent.com/wpi-pw/template-workflow/master/wpi-shell.sh) $script
+  done
+fi
