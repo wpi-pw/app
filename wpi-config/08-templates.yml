@@ -9,7 +9,7 @@
 # and options are
 # Remember, whitespace is significant! Tabs and spaces mean different things
 
-init: default
+workflow: default
 env: default
 mu_plugins: default
 plugins_single: default
