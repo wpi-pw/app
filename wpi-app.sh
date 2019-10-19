@@ -12,8 +12,7 @@ do
 done
 
 # Get wpi-source for yml parsing, noroot, errors etc
-#source <(curl -s https://raw.githubusercontent.com/wpi-pw/template-workflow/master/wpi-source.sh)
-source wpi-source.sh
+source <(curl -s https://raw.githubusercontent.com/wpi-pw/template-workflow/master/wpi-source.sh)
 
 # Run shell runner before app install
 if [ "$wpi_init_shell" == "true" ]; then
@@ -28,12 +27,14 @@ if [ "$wpi_init_workflow" != "false" ]; then
   # current environment
   get_cur_env $1
 
-  # Download and run default workflow template or custom from config
+  # Download and run default workflow template or custom from the config
   template_runner $wpi_templates_workflow "template-workflow/wpi-workflow" $wpi_init_workflow $cur_env
 
-  # Run the env making after setup checking
+  # Download and run default env template or custom from the config
   template_runner $wpi_templates_env "template-env/env-init" $wpi_init_env $cur_env
 
+  # Download and run default settings template or custom from the config
+  template_runner $wpi_templates_settings "template-settings/settings-init" $wpi_init_settings $cur_env
 fi
 
 # Run shell runner after app install
