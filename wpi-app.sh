@@ -24,20 +24,16 @@ fi
 
 # Run workflow install after setup checking
 if [ "$wpi_init_workflow" != "false" ]; then
+  # current environment
+  get_cur_env $1
 
-  # Download default env template or custom from config
-  if [ "$wpi_templates_workflow" == "default" ]; then
-      curl --silent https://raw.githubusercontent.com/wpi-pw/template-workflow/master/wpi-workflow.sh > tmp-template.sh
-  else
-      curl --silent $wpi_templates_workflow > tmp-template.sh
-  fi
+  # Download and run default workflow template or custom from config
+  workflow_url="https://raw.githubusercontent.com/wpi-pw/template-workflow/master/wpi-workflow.sh"
+  template_runner $wpi_templates_workflow $workflow_url $wpi_init_workflow $cur_env
 
-  # If template downloaded, run the script
-  if [ -f "${PWD}/tmp-template.sh" ]; then
-      bash ${PWD}/tmp-template.sh $1
-      # delete the script after complete
-      rm ${PWD}/tmp-template.sh
-  fi
+  # Run the env making after setup checking
+  env_url="https://raw.githubusercontent.com/wpi-pw/template-env/master/env-init.sh"
+  template_runner $wpi_templates_env $env_url $wpi_init_env $cur_env
 
 fi
 

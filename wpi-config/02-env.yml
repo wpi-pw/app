@@ -17,6 +17,7 @@ local:
   db_user: app_db_user
   db_pass: app_db_pass
   db_prefix: wp_wpi_
+  app_protocol: http
 
 dev:
   app_host: wpi.dev
@@ -26,6 +27,7 @@ dev:
   db_user: app_db_user
   db_pass: app_db_pass
   db_prefix: wp_wpi_
+  app_protocol: http
 
 staging:
   app_host: wpi.staging
@@ -35,6 +37,7 @@ staging:
   db_user: app_db_user
   db_pass: app_db_pass
   db_prefix: wp_wpi_
+  app_protocol: https
 
 production:
   app_host: wpi.production
@@ -44,3 +47,4 @@ production:
   db_user: app_db_user
   db_pass: app_db_pass
   db_prefix: wp_wpi_
+  app_protocol: https
