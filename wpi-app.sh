@@ -12,13 +12,14 @@ do
 done
 
 # Get wpi-source for yml parsing, noroot, errors etc
-source <(curl -s https://raw.githubusercontent.com/wpi-pw/template-workflow/master/wpi-source.sh)
+#source <(curl -s https://raw.githubusercontent.com/wpi-pw/template-workflow/master/wpi-source.sh)
+source wpi-source.sh
 
 # Run shell runner before app install
 if [ "$wpi_init_shell" == "true" ]; then
   for script in "${wpi_shell_before_install[@]}"
   do
-    bash <(curl -s https://raw.githubusercontent.com/wpi-pw/template-workflow/master/wpi-shell.sh) $script
+    bash <(curl -s $(url_path "template-workflow/wpi-shell")) $script
   done
 fi
 
@@ -28,12 +29,10 @@ if [ "$wpi_init_workflow" != "false" ]; then
   get_cur_env $1
 
   # Download and run default workflow template or custom from config
-  workflow_url="https://raw.githubusercontent.com/wpi-pw/template-workflow/master/wpi-workflow.sh"
-  template_runner $wpi_templates_workflow $workflow_url $wpi_init_workflow $cur_env
+  template_runner $wpi_templates_workflow "template-workflow/wpi-workflow" $wpi_init_workflow $cur_env
 
   # Run the env making after setup checking
-  env_url="https://raw.githubusercontent.com/wpi-pw/template-env/master/env-init.sh"
-  template_runner $wpi_templates_env $env_url $wpi_init_env $cur_env
+  template_runner $wpi_templates_env "template-env/env-init" $wpi_init_env $cur_env
 
 fi
 
@@ -41,6 +40,6 @@ fi
 if [ "$wpi_init_shell" == "true" ]; then
   for script in "${wpi_shell_after_install[@]}"
   do
-    bash <(curl -s https://raw.githubusercontent.com/wpi-pw/template-workflow/master/wpi-shell.sh) $script
+    bash <(curl -s $(url_path "template-workflow/wpi-shell")) $script
   done
 fi
