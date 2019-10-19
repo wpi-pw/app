@@ -19,4 +19,4 @@ bulks:
 
 mu_plugins:
   - name: mu-plugin-name
-    zip: ""
+    php_url: ""

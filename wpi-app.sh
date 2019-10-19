@@ -35,6 +35,9 @@ if [ "$wpi_init_workflow" != "false" ]; then
 
   # Download and run default settings template or custom from the config
   template_runner $wpi_templates_settings "template-settings/settings-init" $wpi_init_settings $cur_env
+
+  # Download and run default mu-plugins template or custom from the config
+  template_runner $wpi_templates_mu_plugins "template-mu-plugins/mu-plugins-init" $wpi_init_mu_plugins
 fi
 
 # Run shell runner after app install
