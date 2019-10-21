@@ -9,10 +9,10 @@
 # and options are
 # Remember, whitespace is significant! Tabs and spaces mean different things
 
-workflow: wp-cli
+workflow: bedrock
 wordpress: *
-env: false
-plugins: false
+env: true
+plugins: true
 mu_plugins: false
 theme: false
 child_theme: false
