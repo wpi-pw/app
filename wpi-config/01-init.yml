@@ -10,9 +10,9 @@
 # Remember, whitespace is significant! Tabs and spaces mean different things
 
 workflow: bedrock
-wordpress: *
-env: true
-plugins: true
+wordpress: "*"
+env: false
+plugins: false
 mu_plugins: false
 theme: false
 child_theme: false

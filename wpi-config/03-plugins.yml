@@ -9,39 +9,30 @@
 # and options are
 # Remember, whitespace is significant! Tabs and spaces mean different things
 
-done:
-  - name: duplicate-post
-    package: wp-cli
-      zip: ""
-      ver: *
-  - name: envato-market
-    package: wp-cli
-      zip: https://github.com/envato/wp-envato-market/releases/download/v2.0.1/envato-market-2.0.1.zip
-      ver: *
-
 single:
   - name: duplicate-post
     package: wp-cli
-      zip: ""
-      ver: *
-  - name: envato-market
-    package: wp-cli
-      zip: https://github.com/envato/wp-envato-market/releases/download/v2.0.1/envato-market-2.0.1.zip
-      ver: *
-  - name: cdk_sp/acf-plus-htd
-    package: bitbucket
-      key: ""
-      secret: ""
-      ver: master
-    install:
-      composer: false
-      npm: false
-        dev: npm run dev
-        prod: npm run prod
+#  - name: envato-market
+#    package: wp-cli
+#    ver: "*"
+#    zip: https://github.com/envato/wp-envato-market/releases/download/v2.0.1/envato-market-2.0.1.zip
+#  - name: bitbucket_team/repo_name
+#    package: bitbucket
+#    setup: custom
 
 bulks:
-  elementor-pro: *
+  elementor-pro: "*"
 
 mu_plugins:
   - name: mu-plugin-name
     php_url: ""
+
+setup:
+  custom:
+    bitbucket:
+      key: ""
+      secret: ""
+    composer: install
+    npm:
+      dev: npm run dev
+      prod: npm run prod
