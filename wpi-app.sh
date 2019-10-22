@@ -40,8 +40,7 @@ if [ "$wpi_init_workflow" != "false" ]; then
   template_runner $wpi_templates_mu_plugins "template-mu-plugins/mu-plugins-init" $wpi_init_mu_plugins
 
   # Download and run default mu-plugins template or custom from the config
-#  template_runner $wpi_templates_plugins "templateplugins/plugins-single-init" $wpi_init_plugins
-  bash /home/vagrant/apps/wpi.test/template-plugins/plugins-single-init.sh $1
+  template_runner $wpi_templates_plugins "templateplugins/plugins-single-init" $wpi_init_plugins
 fi
 
 # Run shell runner after app install
