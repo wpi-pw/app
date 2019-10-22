@@ -12,13 +12,18 @@
 single:
   - name: duplicate-post
     package: wp-cli
-#  - name: envato-market
+#  - name: plugin-name
 #    package: wp-cli
 #    ver: "*"
-#    zip: https://github.com/envato/wp-envato-market/releases/download/v2.0.1/envato-market-2.0.1.zip
+#    zip: ""
 #  - name: bitbucket_team/repo_name
 #    package: bitbucket
 #    setup: custom
+#    ver: commit/release/branch
+#  - name: github_user/repo_name
+#    package: github
+#    setup: custom
+#    ver: commit/release/branch
 
 bulks:
   elementor-pro: "*"
@@ -32,7 +37,10 @@ setup:
     bitbucket:
       key: ""
       secret: ""
+    github-token: ""
     composer: install
     npm:
       dev: npm run dev
       prod: npm run prod
+  autoload:
+    composer: dump-autoload
