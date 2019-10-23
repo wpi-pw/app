@@ -22,14 +22,14 @@ shell: false
 templates: false
 
 setup:
-  custom:
-    bitbucket:
-      key: ""
-      secret: ""
-    github-token: ""
-    composer: install
-    npm:
-      dev: npm run dev
-      prod: npm run prod
-  autoload:
-    composer: dump-autoload
+#  custom:
+#    bitbucket:
+#      key: ""
+#      secret: ""
+#    github-token: ""
+#    composer: install
+#    npm:
+#      dev: npm run build &> /dev/null
+#      prod: npm run build:production &> /dev/null
+#  autoload:
+#    composer: dump-autoload

@@ -10,20 +10,11 @@
 # Remember, whitespace is significant! Tabs and spaces mean different things
 
 single:
-  - name: duplicate-post
-    package: wp-cli
-#  - name: plugin-name
-#    package: wp-cli
-#    ver: "*"
+  - name: duplicate-post  # wp.org name, bitbucket_team/repo_name or github_user/repo_name
+    package: wp-cli # wp-cli/bitbucket/github
+#    setup: custom # setup the config in init file
+#    ver: commit/release/branch
 #    zip: ""
-#  - name: bitbucket_team/repo_name
-#    package: bitbucket
-#    setup: custom
-#    ver: commit/release/branch
-#  - name: github_user/repo_name
-#    package: github
-#    setup: custom
-#    ver: commit/release/branch
 
 bulks:
   elementor-pro: "*"
