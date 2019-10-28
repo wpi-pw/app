@@ -13,6 +13,7 @@ workflow: default
 env: default
 mu_plugins: default
 plugins_single: default
+plugins_bulk: default
 theme: default
 child_theme: default
 settings: default
