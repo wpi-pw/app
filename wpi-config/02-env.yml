@@ -13,9 +13,9 @@ local:
   app_host: wpi.test
   app_dir: /
   app_content: /
-  db_name: wpitestUVh6F3fg
-  db_user: wpitestUUflTqtpZ
-  db_pass: V4qMGerARQ7O3tK1BHT8JpcX
+  db_name: app_db_name
+  db_user: app_db_user
+  db_pass: app_db_pass
   db_prefix: wp_wpi_
   app_protocol: http
 
@@ -33,9 +33,9 @@ staging:
   app_host: wpi.staging
   app_dir: /
   app_content: /
-  db_name: wpitestUVh6F3fg
-  db_user: wpitestUUflTqtpZ
-  db_pass: V4qMGerARQ7O3tK1BHT8JpcX
+  db_name: app_db_name
+  db_user: app_db_user
+  db_pass: app_db_pass
   db_prefix: wp_wpi_
   app_protocol: https
 
