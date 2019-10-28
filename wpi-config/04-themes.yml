@@ -18,8 +18,10 @@ parent:
 #  zip: ""
 
 child:
-  generate_scaffold: true
-  name: child-theme
-  package: wp-cli
-  ver: "*"
-  zip: false
+  name: child-theme # wp.org  name, bitbucket_team/repo_name or github_user/repo_name
+  generate_scaffold: false # generates child theme based on an existing theme
+#  package: wp-cli # wp-cli/bitbucket/github
+#  setup: custom # setup the config in init file
+#  rename: wpi
+#  ver: commit/release/branch
+#  zip: ""

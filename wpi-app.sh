@@ -44,6 +44,10 @@ if [ "$wpi_init_workflow" != "false" ]; then
 
   # Download and run default themes template or custom from the config
   template_runner $wpi_templates_theme "template-theme/theme-init" $wpi_init_theme
+
+#  # Download and run default child theme template or custom from the config
+#  template_runner $wpi_templates_theme "template-child-theme/child-theme-init" $wpi_init_child_theme
+  bash /home/vagrant/apps/wpi.test/template-child-theme/child-theme-init.sh $1
 fi
 
 # Run shell runner after app install
