@@ -55,6 +55,12 @@ if [ "$(wpi_yq init.workflow)" != "false" ]; then
 
   # Download and run default child theme template or custom from the config
   template_runner $(wpi_yq templates.extra) "template-extra/extra-init" $(wpi_yq init.extra)
+  
+  # Check for wp cli helper file before db reset
+  if [ -f "${PWD}/wp_tmp_file.txt" ]; then
+    wp db reset --yes --quiet
+    rm ${PWD}/wp_tmp_file.txt
+  fi  
 fi
 
 # Create array of scripts
