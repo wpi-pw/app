@@ -38,6 +38,12 @@ if [ "$(wpi_yq init.workflow)" != "false" ]; then
   # Download and run default settings template or custom from the config
   template_runner $(wpi_yq templates.settings) "template-settings/settings-init" $(wpi_yq init.settings) $cur_env
 
+  # WP CLI helper for successful plugins/themes install
+  if ! $(wp core is-installed); then
+      wp core install --url=tmp --title=tmp --admin_user=tmp --admin_password=tmp --admin_email=tmp@tmp.tmp --quiet
+      touch wp_tmp_file.txt
+  fi
+
   # Download and run default mu-plugins template or custom from the config
   template_runner $(wpi_yq templates.mu_plugins) "template-mu-plugins/mu-plugins-init" $(wpi_yq init.mu_plugins)
 
@@ -55,12 +61,12 @@ if [ "$(wpi_yq init.workflow)" != "false" ]; then
 
   # Download and run default child theme template or custom from the config
   template_runner $(wpi_yq templates.extra) "template-extra/extra-init" $(wpi_yq init.extra)
-  
-  # Check for wp cli helper file before db reset
+
+  # WP CLI helper for plugins/themes remover
   if [ -f "${PWD}/wp_tmp_file.txt" ]; then
     wp db reset --yes --quiet
     rm ${PWD}/wp_tmp_file.txt
-  fi  
+  fi
 fi
 
 # Create array of scripts
