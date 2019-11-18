@@ -60,7 +60,7 @@ if [ "$(wpi_yq init.workflow)" != "false" ]; then
   template_runner $(wpi_yq templates.child_theme) "template-child-theme/child-theme-init" $(wpi_yq init.child_theme) $cur_env
 
   # Download and run default child theme template or custom from the config
-  template_runner $(wpi_yq templates.extra) "template-extra/extra-init" $(wpi_yq init.extra)
+  template_runner $(wpi_yq templates.extra) "template-extra/extra-init" $(wpi_yq init.extra) $cur_env
 
   # WP CLI helper for plugins/themes remover
   if [ -f "${PWD}/wp_tmp_file.txt" ]; then
