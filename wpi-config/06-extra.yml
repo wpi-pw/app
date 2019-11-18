@@ -9,6 +9,30 @@
 # and options are
 # Remember, whitespace is significant! Tabs and spaces mean different things
 
-elementor_pro_license: ""
+# Custom wp setup
+files: custom,extra # custom - wp customization, extra - licenses, multisite - setup
+wp_post_revisions: 3
+autosave_interval: 86400
+wp_memory_limit: 1024M
+wp_max_memory_limit: 1024M
+wp_cron_disable: true
+# Custom wp setup for production
+media_trash: true
+empty_trash_days: 10
+
+# Multisite setup
+multisite: false # support subdomain/subdirectory
+
+# WP Mail SMTP by WPForms setup
+wpms_on: false
+wpms_smtp_pass: ""
+
+# WP Rocket license
 wp_rocket_email: ""
 wp_rocket_key: ""
+
+# Elementor Pro license
+elementor_pro_license: ""
+
+# AdvancedCustomFields Pro - license
+acf_pro_update_license: ""
