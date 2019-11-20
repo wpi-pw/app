@@ -1,15 +1,10 @@
-# dev
-.idea
+# all hidden files
+/.*
 
-# project
-.env
-.env.*
-/vendor/
+# all directories
+/*
 
-# workflow
-app
-config
-web
-/composer.json
-/composer.lock
-/wp-cli.yml
+# workflow gitignore exclude
+!wpi-app.sh
+!wpi-config
+!README.md
