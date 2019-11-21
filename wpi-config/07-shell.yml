@@ -9,7 +9,9 @@
 # and options are
 # Remember, whitespace is significant! Tabs and spaces mean different things
 
-before_install:
-  - https://gist.githubusercontent.com/example.sh
-after_install:
-  - https://gist.githubusercontent.com/example.sh
+#before_install:
+#  - https://gist.githubusercontent.com/example.sh
+
+#after_install:
+#  - https://raw.githubusercontent.com/wpi-pw/dependencies/master/bsh-symlinks.sh
+#  - https://raw.githubusercontent.com/wpi-pw/dependencies/master/bsh-multisite-url-fixer.sh
