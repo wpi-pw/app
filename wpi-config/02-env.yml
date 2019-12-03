@@ -18,6 +18,8 @@ local:
   db_pass: app_db_pass
   db_prefix: wp_wpi_
   app_protocol: http
+#  custom: # don't change the key
+#    SOME_KEY: some value
 
 dev:
   app_host: wpi.dev
@@ -28,6 +30,8 @@ dev:
   db_pass: app_db_pass
   db_prefix: wp_wpi_
   app_protocol: http
+#  custom: # don't change the key
+#    SOME_KEY: some value
 
 staging:
   app_host: wpi.staging
@@ -38,6 +42,8 @@ staging:
   db_pass: app_db_pass
   db_prefix: wp_wpi_
   app_protocol: https
+#  custom: # don't change the key
+#    SOME_KEY: some value
 
 production:
   app_host: wpi.production
@@ -48,3 +54,5 @@ production:
   db_pass: app_db_pass
   db_prefix: wp_wpi_
   app_protocol: https
+#  custom: # don't change the key
+#    SOME_KEY: some value
