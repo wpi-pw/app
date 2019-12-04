@@ -27,7 +27,7 @@ setup:
 #      key: ""
 #      secret: ""
 #    github-token: ""
-#    composer: install
+#    composer: install # supporting install/update/dump-autoload/install && dump-autoload
 #    npm:
 #      dev: npm run build &> /dev/null
 #      prod: npm run build:production &> /dev/null
