@@ -15,7 +15,7 @@ done
 source <(curl -s https://raw.githubusercontent.com/wpi-pw/template-workflow/master/wpi-source.sh)
 
 # Run shell runner before app install
-shell_runner before_install
+shell_runner before_install $(get_cur_env $1)
 
 # Run workflow install after setup checking
 if [ "$(wpi_yq init.workflow)" != "false" ]; then

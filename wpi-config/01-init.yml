@@ -21,7 +21,7 @@ settings: false
 extra: false
 shell: false
 
-setup:
+#setup:
 #  custom:
 #    bitbucket:
 #      key: ""
