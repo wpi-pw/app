@@ -14,7 +14,10 @@ parent:
   package: wp-cli # wp-cli/bitbucket/github
 #  setup: custom # setup the config in init file
 #  rename: wpi
-#  ver: commit/release/branch
+#  branch: # taking the branch via environment in env.yml, local/dev - always master
+#    staging: staging
+#    production: master
+#  ver: version/commit/release
 #  zip: ""
 
 child:
