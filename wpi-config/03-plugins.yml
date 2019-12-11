@@ -13,7 +13,10 @@ single:
   - name: duplicate-post  # wp.org name, bitbucket_team/repo_name or github_user/repo_name
     package: wp-cli # wp-cli/bitbucket/github
 #    setup: custom # setup the config in init file
-#    ver: commit/release/branch
+#    branch: # taking the branch via environment in env.yml, local/dev - always master
+#      staging: staging
+#      production: master
+#    ver: version/commit/release
 #    zip: ""
 
 bulks:
