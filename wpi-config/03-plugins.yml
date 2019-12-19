@@ -22,6 +22,6 @@ single:
 bulks:
   elementor-pro: "*"
 
-mu_plugins:
+must_use:
   - name: mu-plugin-name
     php_url: ""
