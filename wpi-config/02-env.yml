@@ -46,6 +46,7 @@ staging:
 #    SOME_KEY: some value
 
 production:
+  app_noindex: false # force noindex for productions and another environments
   app_host: wpi.production
   app_dir: /
   app_content: /
