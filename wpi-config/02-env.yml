@@ -11,6 +11,8 @@
 
 local:
   app_host: wpi.test
+  app_user: wpi
+  app_ip: 192.168.13.100
   app_dir: /
   app_content: /
   db_name: app_db_name
@@ -23,6 +25,8 @@ local:
 
 dev:
   app_host: wpi.dev
+  app_user: wpi
+  app_ip: 192.168.13.100
   app_dir: /
   app_content: /
   db_name: app_db_name
@@ -35,6 +39,8 @@ dev:
 
 staging:
   app_host: wpi.staging
+  app_user: wpi
+  app_ip: 192.168.13.100
   app_dir: /
   app_content: /
   db_name: app_db_name
@@ -48,6 +54,8 @@ staging:
 production:
   app_noindex: false # force noindex for productions and another environments
   app_host: wpi.production
+  app_user: wpi
+  app_ip: 192.168.13.100
   app_dir: /
   app_content: /
   db_name: app_db_name
