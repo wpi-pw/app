@@ -10,14 +10,17 @@
 # Remember, whitespace is significant! Tabs and spaces mean different things
 
 single:
-  - name: duplicate-post  # wp.org name, bitbucket_team/repo_name or github_user/repo_name
-    package: wp-cli # wp-cli/bitbucket/github
-#    setup: custom # setup the config in init file
-#    branch: # taking the branch via environment in env.yml, local/dev - always master
-#      staging: staging
-#      production: master
-#    ver: version/commit/release
-#    zip: ""
+  - name: duplicate-post                     # wp.org name, bitbucket_workspace/repo_name or github_user/repo_name
+    package: wp-cli                          # wp-cli/bitbucket/github
+#    setup: custom                           # setup the config in init file
+#    branch:                                 # taking the branch via environment in env.yml, local/dev - always master
+#      staging: staging                      # put env name from 02-env.yml and set the branch name
+#      production: master                    # put env name from 02-env.yml and set the branch name
+#    ver: version/commit/release             # set specific version for the plugin
+#    zip: ""                                 # put full URL to your zip file with the plugin
+#    symlink:                                # u can switch the plugin from default installation to symlink for specific env
+#      env: local                            # put env name from 02-env.yml
+#      path: /vagrant/apps/plugin.test/live  # set path to existing plugin dir or symlink on your server
 
 bulks:
   elementor-pro: "*"
