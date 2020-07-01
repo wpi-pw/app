@@ -20,8 +20,8 @@ parent:
 #  ver: version/commit/release                # set specific version for the theme
 #  zip: ""                                    # put full URL to your zip file with the theme
 #  symlink:                                   # u can switch the theme from default installation to symlink for specific env
-#    env: local                               # put env name from 02-env.yml
-#    path: /vagrant/apps/plugin.test/live     # set path to existing theme dir or symlink on your server
+#    - env: local                             # put env name from 02-env.yml
+#      path: /vagrant/apps/plugin.test/live   # set path to existing theme dir or symlink on your server
 
 child:
   name: child-theme                           # wp.org  name, bitbucket_team/repo_name or github_user/repo_name
