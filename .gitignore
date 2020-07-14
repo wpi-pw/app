@@ -5,6 +5,7 @@
 /*
 
 # workflow gitignore exclude
+!.gitignore
 !wpi-app.sh
 !wpi-config
 !README.md
