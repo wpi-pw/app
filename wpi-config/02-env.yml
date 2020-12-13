@@ -53,6 +53,7 @@ staging:
 
 production:
   app_noindex: false # force noindex for productions and another environments
+  app_no_config: false # remove wpi config directory after installing process
   app_host: wpi.production
   app_user: wpi
   app_ip: 192.168.13.100
