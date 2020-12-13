@@ -59,6 +59,3 @@ if [ "$(wpi_yq init.workflow)" != "false" ]; then
     rm ${PWD}/wp_tmp_file.txt
   fi
 fi
-
-# Run shell runner after app install
-shell_runner after_install
