@@ -39,5 +39,5 @@ acf_pro_update_license: ""
 
 # Amazon S3 credentials
 s3_provider: ""
-s3_access-key-id: ""
-s3_secret-access-key: ""
+s3_access_key_id: ""
+s3_secret_access_key: ""
